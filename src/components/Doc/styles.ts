@@ -18,6 +18,7 @@ export const Title = styled.h4`
 	line-height: 20px;
 	cursor: pointer;
 	flex: 0.5 1 auto;
+	margin-bottom: 2vh;
 `;
 
 export const Description = styled.h6`
@@ -52,4 +53,5 @@ export const TextContainer = styled.div`
 	width: 100%;
 	padding: 2px;
 	margin: 1vh 0;
+	height: auto;
 `;

@@ -20,12 +20,12 @@ export default MyComponent;`
 
 	return (
 		<Container>
-			<TextContainer style={{ height: '8vh' }}>
+			<TextContainer >
 				<Title>Card Component</Title>
 				<Description>Card Component that contains a image, and it's possibly rotate the image.</Description>
 			</TextContainer>
 			<HR />
-			<TextContainer style={{ height: '28vh' }}>
+			<TextContainer >
 				<Title>Example:</Title>
 				<SyntaxHighlighter language="javascript" style={colors.highlighter} showLineNumbers={true}>
 					{docText}
