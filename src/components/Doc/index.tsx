@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Container, Title, Description, Children, HR, TextContainer } from './styles';
+import { Container, Title, Description, Children, HR, TextContainer, Example } from './styles';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { ThemeContext } from 'styled-components';
 
@@ -12,7 +12,13 @@ import Card from './components/Card';
 
 const MyComponent: React.FC = () => {
 	return(
-		<Card title="Titulo do card" />
+		<Card
+			title='Title of the card'
+			subtitle='Subtitle of the card'
+			actions
+			confirmButton
+			confirmButtonText='Ok'
+		/>
 	)
 }
 
@@ -26,7 +32,8 @@ export default MyComponent;`
 			</TextContainer>
 			<HR />
 			<TextContainer >
-				<Title>Example:</Title>
+				<Example>Example:</Example>
+				<Description>A simple instance of one card.</Description>
 				<SyntaxHighlighter language="javascript" style={colors.highlighter} showLineNumbers={true}>
 					{docText}
 				</SyntaxHighlighter>

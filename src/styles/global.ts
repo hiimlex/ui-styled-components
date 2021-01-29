@@ -14,6 +14,10 @@ export default createGlobalStyle`
 		font-family: 'Poppins', sans-serif;
 	}
 
+	input, select, button, textarea {
+		font-family: 'Poppins', sans-serif;
+	}
+
 	body::-webkit-scrollbar {
     background-color: ${props => props.theme.colors.main};
     border-radius: 2px;

@@ -5,11 +5,13 @@ export default {
 
 	colors: {
 		primary: '#3c3c3c',
-		secundary: '#D72638',
+		secundary: '#0D47A1',
+		success: '#2E7D32',
+		warning: '#C62828',
 		main: '#2c2c2c',
 		background: '#222',
 		text: '#fff',
-		white: '#eee',
+		white: '#fff',
 		highlighter: dracula
 	},
 }

@@ -4,12 +4,14 @@ export default {
 	title: "light",
 
 	colors: {
-		primary: "#D72638",
-		secundary: "#420039",
-		main: "#ededed",
-		background: "#f5f5f5",
+		primary: "#3F51B5",
+		secundary: "#673AB7",
+		warning: "#D72638",
+		success: "#2196F3",
+		main: "#efefef",
+		background: "#ffffff",
 		text: "#333",
-		white: '#eee',
+		white: '#fff',
 		highlighter: docco
 	},
 };

@@ -23,7 +23,11 @@ function App() {
 				<Header toggleTheme={toggleTheme} title={theme.title} />
 				<Doc>
 					<Card
-						title='Titulo do card'
+						title='Title of the card.'
+						subtitle='Subtitle of the card.'
+						actions
+						confirmButton
+						confirmButtonText='Ok'
 					></Card>
 				</Doc>
 			</ThemeProvider>

@@ -18,17 +18,28 @@ export const Title = styled.h4`
 	line-height: 20px;
 	cursor: pointer;
 	flex: 0.5 1 auto;
-	margin-bottom: 2vh;
+	margin-bottom: 1vh;
+`;
+
+export const Example = styled.h4`
+	width: auto;
+	font-size: 16px;
+	color: ${props => props.theme.colors.text};
+	line-height: 20px;
+	cursor: pointer;
+	flex: 0.5 1 auto;
+	margin-bottom: 1vh;
 `;
 
 export const Description = styled.h6`
 	width: auto;
-	font-size: 16px;
+	font-size: 14px;
 	color: ${props => props.theme.colors.text};
 	opacity: 0.8;
 	line-height: 16px;
 	font-weight: 400;
 	flex: 0.5 1 auto;
+	margin-bottom: 1vh;
 `;
 
 export const Children = styled.div`

@@ -12,6 +12,8 @@ declare module 'styled-components' {
 			text: string,
 			white: string,
 			highlighter: any,
+			success: string,
+			warning: string,
 		}
 	}
 }
