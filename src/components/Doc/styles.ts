@@ -1,53 +1,55 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-	width: 100%;
-	min-height: 100vh;
+	width: 70%;
+	min-height: auto;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
 	padding: 4vh 0;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
 `;
 
 export const Title = styled.h4`
-	width: 70%;
+	width: auto;
 	font-size: 20px;
 	color: ${props => props.theme.colors.text};
 	line-height: 20px;
 	cursor: pointer;
-	flex: 1 1 auto;
+	flex: 0.5 1 auto;
 `;
 
 export const Description = styled.h6`
-	width: 70%;
-	margin-top: 20px;
+	width: auto;
 	font-size: 16px;
 	color: ${props => props.theme.colors.text};
 	opacity: 0.8;
 	line-height: 16px;
 	font-weight: 400;
-	flex: 1 1 auto;
-`;
-
-export const Pre = styled.pre`
-	width: 70%;
-	background: ${props => props.theme.colors.background};
-	padding: 12px;
-	border-radius: 8px;
-	flex: 1 1 auto;
-`;
-
-export const Code = styled.code`
-	display: flex;
-	text-align: left;
-	color: ${props => props.theme.colors.text};
-	font-weight: bold;
+	flex: 0.5 1 auto;
 `;
 
 export const Children = styled.div`
-	margin-top: 4vh;
 	display: flex;
 	justify-content: center;
+	align-self: center;
+	margin: 1vh 0;
+`;
+
+export const HR = styled.hr`
+	border: 1px solid;
+	width: 100%;
+	opacity: 0.2;
+	margin: 0.5vh 0;
+`;
+
+export const TextContainer = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex: 1 1 auto;
+	width: 100%;
+	padding: 2px;
+	margin: 1vh 0;
 `;

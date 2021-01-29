@@ -2,11 +2,12 @@ import styled from 'styled-components';
 
 export const HeaderTab = styled.div`
 	width: 100%;
-	height: 60px;
+	height: 70px;
 	background: ${props => props.theme.colors.primary};
 	display: flex;
 	justify-content: center;
-	box-shadow: 0 16px 100px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 104px rgba(0, 0, 0, 0.15);
+	z-index: 2;
 `;
 
 export const Container = styled.div`

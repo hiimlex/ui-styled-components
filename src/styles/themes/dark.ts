@@ -1,3 +1,4 @@
+import { dracula } from "react-syntax-highlighter/dist/esm/styles/hljs"
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
 	title: 'dark',
@@ -8,6 +9,7 @@ export default {
 		main: '#2c2c2c',
 		background: '#222',
 		text: '#fff',
-		white: '#eee'
+		white: '#eee',
+		highlighter: dracula
 	},
 }

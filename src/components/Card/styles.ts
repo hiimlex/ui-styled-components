@@ -1,30 +1,24 @@
 import styled from 'styled-components';
 
 export const Box = styled.div`
-	width: 80vw;
+	width: auto;
+	min-width: 40vw;
 	padding: 10px 20px;
 	background: ${(props) => props.theme.colors.background};
 	color: ${(props) => props.theme.colors.text};
-	box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.1);
 	border-radius: 8px;
 
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 `;
 
 export const Content = styled.div`
 	display: flex;
 	flex-direction: column;
-	height: 56vh;
+	height: auto;
 	justify-content: space-between;
-	flex: 1 1 auto;
-`;
-
-export const Image = styled.img`
-	margin-top: 6vh;
-	height: 48vh;
-	width: 100%;
-	border-radius: 4px;
 `;
 
 export const HR = styled.hr`

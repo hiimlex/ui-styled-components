@@ -1,27 +1,39 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Container, Title, Description, Children, HR, TextContainer } from './styles';
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { ThemeContext } from 'styled-components';
 
-import { Container,Title, Description, Children, Pre, Code } from './styles';
 
 const Doc: React.FC = (props) => {
+	const { colors } = useContext(ThemeContext);
 
+	const docText = `import React from 'react';
+import Card from './components/Card';
 
+const MyComponent: React.FC = () => {
 	return(
+		<Card title="Titulo do card" />
+	)
+}
+
+export default MyComponent;`
+
+	return (
 		<Container>
-			<Title>Card Component</Title>
-			<Description>Card Component that contains a image, and it's possibly rotate the image.</Description>
-			<br/>
-			<Title>Example:</Title>
-			<br/>
-			<Pre>
-				<Code>
-					{`<Card
-  title="string"
-  uri="string"
-/>`}
-				</Code>
-			</Pre>
+			<TextContainer style={{ height: '8vh' }}>
+				<Title>Card Component</Title>
+				<Description>Card Component that contains a image, and it's possibly rotate the image.</Description>
+			</TextContainer>
+			<HR />
+			<TextContainer style={{ height: '28vh' }}>
+				<Title>Example:</Title>
+				<SyntaxHighlighter language="javascript" style={colors.highlighter} showLineNumbers={true}>
+					{docText}
+				</SyntaxHighlighter>
+			</TextContainer>
+			<HR />
 			<Children>
-			{props.children}
+				{props.children}
 			</Children>
 		</Container>
 	);
