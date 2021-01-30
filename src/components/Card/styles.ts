@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const Box = styled.div`
-	width: auto;
-	max-width: 40vw;
+	width: 50%;
+	max-width: 100%;
+	height: auto;
 	padding: 10px 20px;
 	background: ${(props) => props.theme.colors.background};
 	color: ${(props) => props.theme.colors.text};
@@ -12,6 +13,8 @@ export const Box = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	flex-wrap: wrap;
+	flex: 1 1 auto;
 `;
 
 export const HR = styled.hr`
@@ -33,9 +36,9 @@ export const Header = styled.header`
 `;
 
 export const Actions = styled.div`
-	margin: 1vh 0;
+	margin: 10px 0 0 0;
 	width: 100%;
-	height: 24px;
+	height: 42px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -68,16 +71,4 @@ export const Content = styled.div`
 	text-align: justify;
 	text-justify: inter-word;
 	letter-spacing: 0.02em;
-`;
-
-export const Button = styled.button`
-	width: auto;
-	padding: 4px 20px;
-	font-size: 14px;
-	font-weight: bold;
-	text-transform: uppercase;
-	color: ${props => props.theme.colors.white};
-	border: none;
-	border-radius: 4px;
-	background: ${props => props.theme.colors.primary};
 `;
