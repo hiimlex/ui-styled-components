@@ -11,6 +11,7 @@ interface Props {
 	recuseButton?: boolean;
 	customStyle?: object;
 	confirmButtonText?: string;
+	contentText?: string;
 }
 
 const Card: React.FC<Props> = (props: Props) => {
@@ -21,11 +22,7 @@ const Card: React.FC<Props> = (props: Props) => {
 				{props.subtitle ? <Subtitle>{props.subtitle}</Subtitle> : null}
 			</Header>
 			<HR />
-			<Content>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum maxime
-				officiis quo quidem qui! Quasi labore repellendus odio cumque quis aut
-				quo possimus atque id vero dolores odit, a voluptas?
-			</Content>
+			<Content>{props.contentText}</Content>
 			{props.actions ? (
 				<Actions>
 					{props.recuseButton ? (

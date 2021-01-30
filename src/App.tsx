@@ -19,7 +19,6 @@ function App() {
 
 	useEffect(() => {
 		deleteAllCookies();
-		console.log('oi');
 	}, []);
 
 	return (
@@ -34,6 +33,9 @@ function App() {
 						actions
 						confirmButton
 						confirmButtonText="Ok"
+						contentText="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum maxime
+						officiis quo quidem qui! Quasi labore repellendus odio cumque quis aut
+						quo possimus atque id vero dolores odit, a voluptas?"
 					></Card>
 				</Doc>
 			</ThemeProvider>

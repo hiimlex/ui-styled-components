@@ -10,4 +10,5 @@ export const Confirm = styled.button`
 	border: none;
 	border-radius: 4px;
 	background: ${(props) => props.theme.colors.primary};
+	cursor: pointer;
 `;

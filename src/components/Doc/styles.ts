@@ -14,32 +14,36 @@ export const Container = styled.div`
 export const Title = styled.h4`
 	width: auto;
 	font-size: 20px;
-	color: ${props => props.theme.colors.text};
+	color: ${(props) => props.theme.colors.text};
 	line-height: 20px;
 	cursor: pointer;
 	flex: 0.5 1 auto;
 	margin-bottom: 1vh;
+	letter-spacing: 0.02em;
 `;
 
 export const Example = styled.h4`
 	width: auto;
 	font-size: 16px;
-	color: ${props => props.theme.colors.text};
-	line-height: 20px;
-	cursor: pointer;
+	color: ${(props) => props.theme.colors.text};
+	line-height: 1.75em;
 	flex: 0.5 1 auto;
 	margin-bottom: 1vh;
+	letter-spacing: 0.02em;
 `;
 
 export const Description = styled.h6`
 	width: auto;
 	font-size: 14px;
-	color: ${props => props.theme.colors.text};
+	color: ${(props) => props.theme.colors.text};
 	opacity: 0.8;
-	line-height: 16px;
+	line-height: 1.5em;
 	font-weight: 400;
 	flex: 0.5 1 auto;
 	margin-bottom: 1vh;
+	text-align: justify;
+	text-justify: inter-word;
+	letter-spacing: 0.02em;
 `;
 
 export const Children = styled.div`
