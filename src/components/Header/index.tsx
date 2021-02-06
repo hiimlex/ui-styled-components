@@ -19,8 +19,8 @@ const Header: React.FC<Props> = (props: Props) => {
 					<Link href="https://linktr.ee/yuninho" target="_blank">LeUX</Link>
 				</Title>
 				<Nav>
-					<MdInvertColors size={27} color={colors.white} style={{ cursor: 'pointer', marginRight: 10 }} onClick={props.toggleTheme} />
-					<FaGithub size={24} color={colors.white} style={{ cursor: 'pointer' }} onClick={() => { window.open('https://github.com/hiimlex/ui-styled-components/') }} />
+					<MdInvertColors size={27} color={colors.text} style={{ cursor: 'pointer', marginRight: 10 }} onClick={props.toggleTheme} />
+					<FaGithub size={24} color={colors.text} style={{ cursor: 'pointer' }} onClick={() => { window.open('https://github.com/hiimlex/ui-styled-components/') }} />
 				</Nav>
 			</Container>
 		</HeaderTab>

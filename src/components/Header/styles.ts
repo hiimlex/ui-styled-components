@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const HeaderTab = styled.div`
 	width: 100%;
 	height: 70px;
-	background: ${(props) => props.theme.colors.primary};
+	background: ${(props) => props.theme.colors.background};
 	display: flex;
 	justify-content: center;
 	box-shadow: 0 0 104px rgba(0, 0, 0, 0.15);
@@ -19,12 +19,12 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h1`
-	color: ${(props) => props.theme.colors.white};
+	color: ${(props) => props.theme.colors.text};
 	font-size: 24px;
 	line-height: 24px;
 	border: 2px solid;
 	padding: 8px;
-	border-color: ${(props) => props.theme.colors.white};
+	border-color: ${(props) => props.theme.colors.text};
 	text-decoration: underline;
 	display: flex;
 	&:hover {
@@ -33,9 +33,9 @@ export const Title = styled.h1`
 `;
 
 export const Link = styled.a`
-	color: ${(props) => props.theme.colors.white};
+	color: ${(props) => props.theme.colors.text};
 	&:visited&:active {
-		color: ${(props) => props.theme.colors.white};
+		color: ${(props) => props.theme.colors.text};
 	}
 `;
 

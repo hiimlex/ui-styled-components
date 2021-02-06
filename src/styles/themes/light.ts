@@ -8,7 +8,7 @@ export default {
 		secundary: '#673AB7',
 		warning: '#D72638',
 		success: '#2196F3',
-		main: '#ddd',
+		main: '#fff',
 		background: '#ffffff',
 		text: '#333',
 		white: '#fff',
