@@ -14,29 +14,8 @@ export const Container = styled.div`
 	width: 70%;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: flex-end;
 	flex: 0.7 1 auto;
-`;
-
-export const Title = styled.h1`
-	color: ${(props) => props.theme.colors.text};
-	font-size: 24px;
-	line-height: 24px;
-	border: 2px solid;
-	padding: 8px;
-	border-color: ${(props) => props.theme.colors.text};
-	text-decoration: underline;
-	display: flex;
-	&:hover {
-		opacity: 0.8;
-	}
-`;
-
-export const Link = styled.a`
-	color: ${(props) => props.theme.colors.text};
-	&:visited&:active {
-		color: ${(props) => props.theme.colors.text};
-	}
 `;
 
 export const Nav = styled.nav`

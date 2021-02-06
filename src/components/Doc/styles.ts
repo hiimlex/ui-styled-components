@@ -1,15 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-	width: 70%;
+	width: auto;
 	min-height: auto;
-	margin: auto;
+	margin: 1vh 2vw;
 	display: flex;
 	flex-direction: column;
 	padding: 4vh 0;
 	align-items: flex-start;
-	justify-content: center;
-	margin-left: 220px;
+	justify-content: flex-start;
 `;
 
 export const Title = styled.h4`

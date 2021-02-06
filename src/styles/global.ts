@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
 	* {
@@ -28,4 +28,19 @@ export default createGlobalStyle`
 			background-color: ${(props) => props.theme.colors.primary};
 			border-radius: 8px;
 	}
+`;
+
+export const GlobalContainer = styled.div`
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	position: relative;
+`;
+
+export const InnerContent = styled.div`
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
+	margin-left: 200px;
 `;
