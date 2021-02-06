@@ -9,6 +9,7 @@ export const Container = styled.div`
 	padding: 4vh 0;
 	align-items: flex-start;
 	justify-content: center;
+	margin-left: 220px;
 `;
 
 export const Title = styled.h4`

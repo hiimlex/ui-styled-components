@@ -7,7 +7,7 @@ export const HeaderTab = styled.div`
 	display: flex;
 	justify-content: center;
 	box-shadow: 0 0 104px rgba(0, 0, 0, 0.15);
-	z-index: 2;
+	z-index: 0;
 `;
 
 export const Container = styled.div`
