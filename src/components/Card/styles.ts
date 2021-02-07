@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Box = styled.div`
-	width: 50%;
+	width: fit-content;
+	min-width: 50%;
 	max-width: 100%;
 	height: auto;
 	padding: 10px 20px;
@@ -28,7 +29,7 @@ export const HR = styled.hr`
 export const Header = styled.header`
 	width: 100%;
 	padding: 6px 0 12px 0;
-	height: 60px;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -38,7 +39,7 @@ export const Header = styled.header`
 export const Actions = styled.div`
 	margin: 10px 0 0 0;
 	width: 100%;
-	height: 42px;
+	height: auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;

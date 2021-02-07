@@ -5,6 +5,7 @@ export default createGlobalStyle`
 		margin: 0;
 		padding: 0;
 		box-sizing: border-box;
+
 	}
 
 	body {
@@ -12,6 +13,7 @@ export default createGlobalStyle`
 		font-size: 14px;
 		color: ${(props) => props.theme.colors.text};
 		font-family: 'Poppins', sans-serif;
+		transition: all 0.5s ease-in-out;
 	}
 
 	input, select, button, textarea {
@@ -28,6 +30,8 @@ export default createGlobalStyle`
 			background-color: ${(props) => props.theme.colors.primary};
 			border-radius: 8px;
 	}
+
+
 `;
 
 export const GlobalContainer = styled.div`
@@ -36,6 +40,10 @@ export const GlobalContainer = styled.div`
 	width: 100%;
 	height: 100%;
 	position: relative;
+
+	@media screen and (max-width: 992px) {
+		display: none;
+	}
 `;
 
 export const InnerContent = styled.div`
@@ -43,4 +51,18 @@ export const InnerContent = styled.div`
 	flex-direction: column;
 	overflow: auto;
 	margin-left: 200px;
+`;
+
+export const NotFound = styled.div`
+	display: none;
+
+	@media screen and (max-width: 992px) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: center;
+		height: 100vh;
+		flex-direction: column;
+		text-align: center;
+	}
 `;

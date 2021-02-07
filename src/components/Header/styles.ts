@@ -11,10 +11,11 @@ export const HeaderTab = styled.div`
 `;
 
 export const Container = styled.div`
-	width: 70%;
+	width: 100%;
+	margin: 0 2vw;
 	display: flex;
 	align-items: center;
-	justify-content: flex-end;
+	justify-content: space-between;
 	flex: 0.7 1 auto;
 `;
 
@@ -23,4 +24,16 @@ export const Nav = styled.nav`
 	justify-content: space-between;
 	flex-direction: row;
 	align-items: center;
+`;
+
+export const Version = styled.h6`
+	font-size: 14px;
+	line-height: 14px;
+	letter-spacing: 0.02em;
+	font-weight: 600;
+	color: ${(props) => props.theme.colors.text};
+	background: ${(props) => props.theme.colors.main};
+	padding: 6px;
+	border-radius: 4px;
+	opacity: 0.8;
 `;

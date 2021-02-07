@@ -11,4 +11,19 @@ export const Confirm = styled.button`
 	border-radius: 4px;
 	background: ${(props) => props.theme.colors.primary};
 	cursor: pointer;
+	transition: all 0.5s ease;
+	opacity: 1;
+
+	&:hover {
+		opacity: 0.9;
+		box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.2);
+	}
+
+	&:focus {
+		border: none;
+		outline: none;
+		background: ${(props) => props.theme.colors.white};
+		color: ${(props) => props.theme.colors.primary};
+		border: 1px solid ${(props) => props.theme.colors.primary};
+	}
 `;
