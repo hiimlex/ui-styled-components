@@ -3,6 +3,8 @@
 >components from react, with styled components and typescript. Auto generate template with theme switcher configured.
 >Access [here](https://hiimlex.github.io/ui-styled-components/) the gihubpages example.
 
+>NOT MOBILE YET
+
 ## To compile the project, follow those steps
 
 ```
