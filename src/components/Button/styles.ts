@@ -24,6 +24,5 @@ export const Confirm = styled.button`
 		outline: none;
 		background: ${(props) => props.theme.colors.white};
 		color: ${(props) => props.theme.colors.primary};
-		border: 1px solid ${(props) => props.theme.colors.primary};
 	}
 `;
