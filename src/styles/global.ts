@@ -51,4 +51,5 @@ export const InnerContent = styled.div`
 	flex-direction: column;
 	overflow: auto;
 	margin-left: 200px;
+	width: 100%;
 `;
