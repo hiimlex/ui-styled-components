@@ -37,8 +37,8 @@ export default createGlobalStyle`
 export const GlobalContainer = styled.div`
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
-	height: 100%;
+	width: 100vw;
+	height: 100vh;
 	position: relative;
 
 	@media screen and (max-width: 992px) {
